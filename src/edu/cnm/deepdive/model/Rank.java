@@ -1,5 +1,8 @@
 package edu.cnm.deepdive.model;
 
+/**
+ * Encapsulates the rank of standard playing cards and attach the {@link Rank} to the {@link String} symbols.
+ */
 public enum Rank {
   ACE,
   TWO,
@@ -31,6 +34,10 @@ public enum Rank {
     "K"
   };
 
+  /**
+   * Returns {@link String} instance value for the card rank.
+   * @return {@link #symbols}  value.
+   */
   public String symbol() {
     return symbols[ordinal()];
   }
